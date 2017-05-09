@@ -1,0 +1,64 @@
+<div id="wrap">
+
+    <div id="inner">
+        
+        <div id="turntable-large" class="turntable has-slipmat" style="display: inline-block">
+        
+            <div class="frame"></div>
+            <div class="table-bg"></div>
+            
+            <img src="app/image/tt_case_and_lighting.png" alt="" class="stub" />
+            
+            <div class="bd">
+            
+                <div class="platter"></div>
+                <div class="slipmat-holder">
+                    <div class="slipmat"></div>
+                </div>
+            
+                <div class="record-holder">
+                    <div class="record"></div>
+                    <div class="record-grooves"></div>
+                    <div class="label"></div>
+                </div>
+                
+                <div class="spindle"></div>
+                <div class="power-light"></div>
+                
+                <a href="#" class="power-dial" data-method="powerToggle"></a>
+                <a href="#" class="button start-stop" data-method="toggle"></a>
+                <a href="#" class="button speed-33 on"></a>
+                <a href="#" class="button speed-45"></a>
+                
+                <div class="light light-on"></div>
+                
+                <a href="#" class="button light"></a>
+                
+                <div class="tonearm-holder">
+                    <div class="tonearm"></div>
+                </div>
+                
+            </div><!--/bd-->
+        
+        </div><!--/turntable-large-->
+    </div>
+    
+    <div><!-- end turntable -->
+    
+    <div id="tracklist">
+        <h1>{{$ctrl.rootdata.name}}</h1>
+        <p>{{$ctrl.rootdata.desc}}</p>
+        <ul>
+           <li ng-repeat="tracklist in $ctrl.rootdata.tracklist"><a href="{{tracklist.href}}" data-turntable="turntable-large" data-artwork="{{tracklist.artwork}}">{{tracklist.name}}</a></li>
+        </ul>
+     </div><!--/tracklist-->
+        
+    </div>
+
+</div>
+
+<p align="center" style="margin-bottom: 20px;"><small>I only added 1 track to the play list so the demo file isn't heavy with a bunch of mp3 files.<br />
+add more tracks via the tracklist.json file in the root folder.</small></p>
+
+<p align="center"><small><b>Soundmanager source:</b><br />
+<a href="http://www.schillmania.com/projects/soundmanager2/" target="_blank">http://www.schillmania.com/projects/soundmanager2</a></small></p>

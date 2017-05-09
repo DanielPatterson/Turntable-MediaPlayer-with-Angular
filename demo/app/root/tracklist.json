@@ -1,0 +1,13 @@
+{
+ 
+ 	"name": "SoundManagerJS Turntable with AngularJS + JSON tracklist",
+	"desc": "Click the link to play the song",
+	
+	"tracklist": [
+	
+		{"href": "app/audio/tracks/bluesbuster.mp3", "artwork": "app/image/vinyl.png", "name": "Bluesbuster - Pacific Gas & Electric"}
+		
+	]
+	
+	
+}
